@@ -8,6 +8,7 @@ git st             查看修改内容
 git diff           查看具体内容
 git add * *        暂存代码 （放在暂存区）
 git reset          用于取消已缓存的内容
+git reset --head   回退到之前的版本（会删掉现在改掉的内容）
 git commit -m " "  提交到本地仓库
 git log            查找提交日志   
 
