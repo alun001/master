@@ -1,0 +1,17 @@
+https://git-scm.com/downloads      下载git地址
+git init                 创建版本库  
+
+git st       查看修改内容
+git log     查找提交日志   
+
+每次提交都要合并代码
+git fetch team master       从公共仓库获取代码
+git reabse  team/master    把team 库的代码合并到 本地git 库
+git push origin master       把本地git 库的代码提交到origin 库的master分支
+
+git add "024"        暂存代码 （放在暂存区）
+git commit -m "feat(game): 抢庄三公 - 提交资源代码"   （本地库） (fix 是提交BUG)
+git push origin dev:master     推送dev 到自己的远端库     (后面加了  -f  强制提交)
+git push team dev::master     推送dev 代码到远端的公共库
+
+git rebase -i @~3    合并之前提交的，f 融合掉sit
