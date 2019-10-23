@@ -3,6 +3,7 @@ mkdir       文件夹名 创建文件夹
 cd          文件夹名  进入文件夹
 ls -a       查看文件夹
 (fix 是提交BUG;feat 是添加功能; )
+git remote rm origin    删除远程地址
 git init                创建版本库
 git st                  查看修改内容
 git diff name           查看具体内容
