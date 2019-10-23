@@ -1,7 +1,11 @@
 https://git-scm.com/downloads      下载git地址
-git init                 创建版本库  
+mkdir       文件夹名 创建文件夹
+cd          文件夹名  进入文件夹
+ls -a       查看文件夹
 
-git st       查看修改内容
+git init    创建版本库
+git st      查看修改内容
+git diff    查看具体内容
 git log     查找提交日志   
 
 每次提交都要合并代码
