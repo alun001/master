@@ -5,13 +5,13 @@ ls -a       查看文件夹
 (fix 是提交BUG;feat 是添加功能; )
 git remote rm origin    删除远程地址
 git init                创建版本库
-git st                  查看修改内容
+git status                  查看修改内容
 git diff name           查看具体内容
 git add *name*          暂存代码 （放在暂存区）
 git reset               用于取消已缓存的内容
 git reset --head HEAD   回退到之前的版本（会删掉现在改掉的内容）
-git co name             复位掉改的内容 
-git co .                复位掉工作区所有的
+git checkout name             复位掉改的内容 
+git checkout .                复位掉工作区所有的
 git rm -f name          删除
 git commit -m " "       提交到本地仓库
 git log                 查找提交日志   
