@@ -25,12 +25,15 @@ git push origin master    把本地git 库的代码提交到origin 库的master�
 git branch              查看分支
 git branch name         创建name分支
 git branch -d name      删除name分支
-git checkout name       切换到name分支
-git checkout -b name    创建并切换到name分支
+git checkout name       切换到name分支  (git switch name)
+git checkout -b name    创建并切换到name分支  (git switch -c name）
+git merge name          把name分支合并到当前分支
+git log --graph         查看分支合并图
+
 
 git push origin dev:master    推送dev 到自己的远端库     (后面加了  -f  强制提交)
 git push team dev::master     推送dev 代码到远端的公共库
 
-git rebase -i @~3    合并之前提交的，f 融合掉sit
+测试分支
 
-发生肯定会浪费开始的了空间和f;asdjfa;sldjkf;lakjsd;lk 
+测试多分支使用
