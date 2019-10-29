@@ -32,3 +32,5 @@ git push origin dev:master    推送dev 到自己的远端库     (后面加了 
 git push team dev::master     推送dev 代码到远端的公共库
 
 git rebase -i @~3    合并之前提交的，f 融合掉sit
+
+发生肯定会浪费开始的了空间和f;asdjfa;sldjkf;lakjsd;lk 
