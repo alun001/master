@@ -36,5 +36,7 @@ git push team dev::master     推送dev 代码到远端的公共库
 
 
 修改同文件同一处，合并会冲突，解决方式：
+    rebase合并：本质是先取消自己的提交，临时保存，然后把当前分支更新到最新的origin分支，最后应用自己的提交。
+    merge合并：将两个分支进行合并提交。
     rebase，   解决冲突，执行add+rebase continue；
 	merge，    解决冲突，重新提交
