@@ -1,8 +1,18 @@
+Git简略教程
+https://www.zybuluo.com/quanall/note/1485491?tdsourcetag=s_pcqq_aiomsg
+开发环境
+https://www.zybuluo.com/xiecanjie/note/1451262?tdsourcetag=s_pcqq_aiomsg
 https://git-scm.com/downloads      下载git地址
+https://github.com/alun001/master.git   Https
+git@github.com:alun001/master.git       SSH
+tmux           开启tmux
+pacman -Syu    更新MSYS
+rebase
 mkdir       文件夹名 创建文件夹
 cd          文件夹名  进入文件夹
 ls -a       查看文件夹
-vim name  进入文件夹 按a开始编辑
+vim name    进入文件夹 按a开始编辑
+git remote -v  查看仓库地址
 
 git remote rm origin    删除远程地址
 git init                创建版本库
@@ -10,6 +20,7 @@ git status              查看改变
 git diff name           查看具体内容
 git add *name*          暂存代码 （放在暂存区）
 git reset               用于取消已缓存的内容
+git reset HEAD~         撤回这次的提交
 git reset --head HEAD   回退到之前的版本（会删掉现在改掉的内容）
 git co name             复位掉改的内容 
 git co .                复位掉工作区所有的
@@ -20,19 +31,21 @@ git log                 查找提交日志
 每次提交都要合并代码
 git fetch team master     从公共仓库获取代码
 git rebase team/master    把team 库的代码合并到 本地git 库
-git push origin master    把本地git 库的代码提交到origin 库的master分支git  -f 是强制提交
+git push origin master    把本地git 库的代码提交到origin 库的master分支 -f 是强制提交
 
 git branch              查看分支
+git branch -a           查看包括远端分支
 git branch name         创建name分支
 git branch -d name      删除name分支
-git checkout name       切换到name分支  (git switch name)
+git checkout name       切换到name分支 (不会把修改的清除掉) (git switch name)
 git checkout -b name    创建并切换到name分支  (git switch -c name）
 git merge name          把name分支合并到当前分支
 git log --graph         查看分支合并图
 
 
-git push origin dev:master    推送dev 到自己的远端库     (后面加了  -f  强制提交)
-git push team dev::master     推送dev 代码到远端的公共库
+git worktree add path+name    克隆出一个name项目并且建一个name分支
+git push origin HEAD:master    推送HEAD 到自己的远端库     (后面加了  -f  强制提交)
+git push team two::master     推送dev 代码到远端的公共库
 
 
 修改同文件同一处，合并会冲突，解决方式：
