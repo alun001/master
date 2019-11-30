@@ -1,0 +1,51 @@
+git log 查看提交日志
+git log oneline 查看在线提交日志
+q键 退出
+
+每次提交都要合并代码
+git fetch team master从公共仓库获取代码
+git reabse  team/master 把team 库的代码合并到 本地git 库
+git push origin master  把本地git 库的代码提交到origin 库的master分支
+
+
+git checkout master 切换到本地master分支
+
+git checkout @~ 分支回退一个版本
+git checkout -    返回到master 分支
+
+git branch -a 查看分支
+
+git rebase abgame/master 合并公共仓库master分支到当前分支
+
+git push origin HEAD:master -f  推送当前HEAD分支到 origin/master 分支 -f 是强制覆盖
+git push abgame HEAD:master 退出当前HEAD 分支到 abgame/master 分支
+
+git remote -v 查看版本库地址
+git remote set-url team ssh://git@85.208.56.186:5600/team/source  修改版本库地址
+ 
+git reset @~ 回退提交的上一个版本
+
+git status 查看文件状态
+git add "src/Game/014"   暂存代码
+git commit -m "feat(game): 房卡十三水 - 提交资源代码"
+git checkout . 丢弃命令
+
+git rebase --abort 取消合并
+
+检查文件命名
+./bin/generate
+./bin/check
+
+提交的过程是
+1.首先用Sourcetree 提交代码，不能提交的，建一个临时提交
+2.使用git log                                    查看当前的日志
+3.使用git fetch abgame                    获取最新代码
+4.使用git rebase abgame/master     合并最新代码
+5.使用git checkout @~                    HEAD 回退一个版本
+6.使用 git push origin HEAD:master         推送HEAD代码到自己仓库
+7.使用 git push team HEAD:master     推送HEAD代码到公共仓库
+8.使用git checkout -                      HEAD返回到master 分支
+9.使用git reset @~                        回退提交的上一个版本
+10.使用git status                           查看文件状态
+
+

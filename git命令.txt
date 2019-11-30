@@ -1,0 +1,58 @@
+创建新的git仓库
+$ mkdir 文件夹 创建文件夹
+$ cd 文件夹  进入文件夹
+$ git init  创建一个git仓库
+ls -a  ls  查看文件夹
+$ git clone url 下载一个仓库到本地.
+$ git add+文件夹名字 将该文件夹添加到缓存.
+$ git status 查看在你上次提交后是否有修改
+$ git status -s  同上，获得最短的输出结果
+$ git diff 尚未缓存的改动
+$ git diff --cached 查看已缓存的改动
+$ git diff HEAD 查看已缓存的与未缓存的所有改动
+$ git commit 把缓存区的内容添加到仓库中
+$ git reset HEAD 用于取消已缓存的内容
+$ git rm -f +文件名 如果删除之前修改过并且已经放到暂存区域的话，则必须要用强制删除选项
+$ git rm --cached <file> 把文件从暂存区移除
+$ git rm –r *  递归删除
+$ git mv 文件夹或者文件  表示移动
+$ git mv test tests 表示对其重新命名
+$ git branch (name) 创建分支,不带参数时会列出本地的分支
+$ git checkout (name) 切换分支 $ git checkout -b (name)创建分支并切换到该分支下
+$ git merge 合并分支
+$ git branch -d (name) 删除分支
+$ git log 查看提交历史
+$ git log --oneline 查看提交历史的简洁版本
+$ git log --graph 查看历史中什么时间出现了分支 合并
+$ git log --reverse 逆向显示所有日志
+$ git log --author=name 查看指定用户的提交日志
+$ git log --oneline --before={3.weeks.ago} --after={2010-04-18} --no-merges 可以指定日
+
+
+
+ git log  查看日志
+ git add +文件名称  该文件添加到缓存
+ git status 上次提交之后是否有修改
+ git diff  查看执行 git status 的结果的详细信息
+ git commit 将缓存区内容添加到仓库中，本地仓库
+
+ git push [alias] [branch] 推送你的新分支与数据到某个远端仓库命令（将本地仓库提交到远程仓库 ）
+
+ git branch -a 列出所有分支
+
+
+ git commit  先提交所有
+ git reset @~  撤销本地仓库的提交
+
+git pull 
+git fetch team master   同步Master
+git rebase team/master  把master同步到本地
+git fetch   将当前分支关联的远程仓库同步到最新
+git rebase  使用交互模式修改
+git rebase --abort
+
+
+	git merge 操作合并分支会让两个分支的每一次提交都按照提交时间（并不是push时间）排序	   ，并且会将两个分支的最新一次commit点进行合并成一个新的commit，最终的分支树呈现非整	条   线性直线的形式
+
+	git rebase操作实际上是将当前执行rebase分支的所有基于原分支提交点之后的commit打散成   一个一个的patch，并重新生成一个新的commit hash值，再次基于原分支目前最新的commit点上进行   提交，并不根据两个分支上实际的每次提交的时间点排序，rebase完成后，切到基分支进行合并另一   个分支时也不会生成一个新的commit点，可以保持整个分支树的完美线性
+    变基操作的实质是丢弃一些现有的提交，然后相应地新建一些内容一样但实际上不同的提交。 如果 你已经将提交推送至某个仓库，而其他人也已经从该仓库拉取提交并进行了后续工作，此时，如果你用  git rebase 命令重新整理了提交并再次推送，你的同伴因此将不得不再次将他们手头的工作与你的提交 进行整合，如果接下来你还要拉取并整合他们修改过的提交，事情就会变得一团糟。
