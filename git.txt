@@ -43,7 +43,7 @@ git merge name          把name分支合并到当前分支
 git log --graph         查看分支合并图
 
 
-git worktree add path+name    克隆出一个name项目并且建一个name分支
+git worktree add path name    克隆出一个name项目并且建一个name分支（path是相对路径）
 git push origin HEAD:master    推送HEAD 到自己的远端库     (后面加了  -f  强制提交)
 git push team two::master     推送dev 代码到远端的公共库
 

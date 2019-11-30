@@ -21,6 +21,7 @@ cc.Class({
     },
     //绑定鼠标点击事件
     mouseEvent:function(event){
+        cc.log("leftMouse");
         var mouseType = event._button;
         if (mouseType == cc.Event.EventMouse.BUTTON_LEFT){
             this.leftMouse();
@@ -31,7 +32,12 @@ cc.Class({
     },
     //鼠标左键
     leftMouse:function(){
-        cc.log("鼠标点击左键", this.camera);
+        cc.log("鼠标点击左键");
+        // var act1 = cc.moveTo(2,0,333);
+        // var act2 = cc.moveTo(2,0,-333);
+        // var act = cc.repeatForever(cc.sequence(act1, act2));
+
+        // cc.director.loadScene("Game");
         // this.camera
         // var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
         // arr.sort(function(){

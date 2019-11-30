@@ -2,7 +2,7 @@
 // var ConfirmDialogPrefab = require("./prefab/ConfirmDialog.js");
 module.exports ={
     //网格大小
-    grifSize:10,
+    gridSize:10,
     //计算消除得分
     calcClearScore: function(count){
         return count*count*5;

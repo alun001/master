@@ -1,0 +1,5 @@
+2019/11/28 00:28:42 [mgrdesk.go:824][D] [stock] check: value=57526732, ratio=50, delta=-213750, chance=49, roll=85/50
+2019/11/28 00:29:11 [mgrdesk.go:824][D] [stock] check: value=2589243, ratio=50, delta=235000, chance=49, roll=70/49
+2019/11/28 00:29:11 [mgrdesk.go:824][D] [stock] check: value=2589243, ratio=50, delta=225000, chance=49, roll=89/49
+2019/11/28 00:30:08 [mgrdesk.go:824][D] [stock] check: value=4649766, ratio=50, delta=25000, chance=49, roll=92/49
+2019/11/28 00:30:08 [mgrdesk.go:824][D] [stock] check: value=4649766, ratio=50, delta=25000, chance=49, roll=96/49

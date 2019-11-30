@@ -1,0 +1,35 @@
+2019/11/28 00:28:42 [sub_state_deal_poker.go:167][D] 盈亏>>>>>>>>>>>>>>>>%!(EXTRA int64=-213750)
+2019/11/28 00:28:42 [mgrdesk.go:877][D] [stock] calculate: stock=5053557503, limit=145159388, time=81, count=7825107, history=0
+2019/11/28 00:28:42 [mgrdesk.go:824][D] [stock] check: value=57526732, ratio=50, delta=-213750, chance=49, roll=85/50
+2019/11/28 00:28:42 [sub_state_deal_poker.go:167][D] 盈亏>>>>>>>>>>>>>>>>%!(EXTRA int64=195000)
+2019/11/28 00:28:42 [mgrdesk.go:877][D] [stock] calculate: stock=5053557503, limit=144326055, time=81, count=7780107, history=0
+2019/11/28 00:28:42 [mgrdesk.go:824][D] [stock] check: value=57526732, ratio=50, delta=195000, chance=49, roll=20/49
+2019/11/28 00:28:51 [mgrdesk.go:869][D] 更新后台库存
+2019/11/28 00:29:11 [sub_state_deal_poker.go:167][D] 盈亏>>>>>>>>>>>>>>>>%!(EXTRA int64=235000)
+2019/11/28 00:29:11 [mgrdesk.go:877][D] [stock] calculate: stock=5044370473, limit=5132936, time=189, count=615250, history=0
+2019/11/28 00:29:11 [mgrdesk.go:824][D] [stock] check: value=2589243, ratio=50, delta=235000, chance=49, roll=70/49
+2019/11/28 00:29:11 [sub_state_deal_poker.go:167][D] 盈亏>>>>>>>>>>>>>>>>%!(EXTRA int64=225000)
+2019/11/28 00:29:11 [mgrdesk.go:877][D] [stock] calculate: stock=5044370473, limit=5093253, time=189, count=610250, history=0
+2019/11/28 00:29:11 [mgrdesk.go:824][D] [stock] check: value=2589243, ratio=50, delta=225000, chance=49, roll=89/49
+2019/11/28 00:29:11 [sub_state_deal_poker.go:167][D] 盈亏>>>>>>>>>>>>>>>>%!(EXTRA int64=-323000)
+2019/11/28 00:29:11 [mgrdesk.go:877][D] [stock] calculate: stock=5044370473, limit=5966269, time=189, count=720250, history=0
+2019/11/28 00:29:11 [mgrdesk.go:824][D] [stock] check: value=2589243, ratio=50, delta=-323000, chance=49, roll=31/50
+2019/11/28 00:29:20 [mgrdesk.go:869][D] 更新后台库存
+2019/11/28 00:29:41 [sub_state_deal_poker.go:167][D] 盈亏>>>>>>>>>>>>>>>>%!(EXTRA int64=45000)
+2019/11/28 00:29:41 [mgrdesk.go:877][D] [stock] calculate: stock=5044047473, limit=8873279, time=218, count=1253250, history=0
+2019/11/28 00:29:41 [mgrdesk.go:824][D] [stock] check: value=4475724, ratio=50, delta=45000, chance=49, roll=8/49
+2019/11/28 00:29:50 [mgrdesk.go:869][D] 更新后台库存
+2019/11/28 00:30:08 [sub_state_deal_poker.go:167][D] 盈亏>>>>>>>>>>>>>>>>%!(EXTRA int64=25000)
+2019/11/28 00:30:08 [mgrdesk.go:877][D] [stock] calculate: stock=5044090223, limit=9218245, time=248, count=1482750, history=0
+2019/11/28 00:30:08 [mgrdesk.go:824][D] [stock] check: value=4649766, ratio=50, delta=25000, chance=49, roll=92/49
+2019/11/28 00:30:08 [sub_state_deal_poker.go:167][D] 盈亏>>>>>>>>>>>>>>>>%!(EXTRA int64=25000)
+2019/11/28 00:30:08 [mgrdesk.go:877][D] [stock] calculate: stock=5044090223, limit=9218245, time=248, count=1482750, history=0
+2019/11/28 00:30:08 [mgrdesk.go:824][D] [stock] check: value=4649766, ratio=50, delta=25000, chance=49, roll=96/49
+2019/11/28 00:30:08 [sub_state_deal_poker.go:167][D] 盈亏>>>>>>>>>>>>>>>>%!(EXTRA int64=-71250)
+2019/11/28 00:30:08 [mgrdesk.go:877][D] [stock] calculate: stock=5044090223, limit=9490423, time=248, count=1527750, history=0
+2019/11/28 00:30:08 [mgrdesk.go:824][D] [stock] check: value=4649766, ratio=50, delta=-71250, chance=49, roll=3/50
+2019/11/28 00:30:14 [mgrdesk.go:487][D] 更新玩家信息
+2019/11/28 00:30:14 [desk.go:328][D] 充值或者修改头像推送成功
+2019/11/28 00:30:17 [mgrdesk.go:869][D] 更新后台库存
+2019/11/28 00:30:33 [mgrhoutai.go:40][D] 发送当前库存更新%!(EXTRA *main.InHouTai=&{1 {6 -154250}})
+2019/11/28 00:30:33 [mgrdesk.go:282][D] 同步当前库存值成功
